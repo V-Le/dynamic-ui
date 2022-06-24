@@ -32,16 +32,33 @@ html {
 
 .navbar__menu {
   display: flex;
+  position: relative;
 }
 
-.navbar__menu ul {
+.link {
+  position: relative;
   margin: 0 16px;
   font-size: 16px;
   font-weight: 500;
   color: var(--primary-font-color);
   transition: color .2s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.navbar__menu ul:hover {
+.link:hover {
   color: aqua;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border: 1px black solid;
+}
+
+.services_dropdown {
+  display: flex;
 }

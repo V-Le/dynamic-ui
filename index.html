@@ -6,21 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drop-down Menu Exercise</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <header>
-    <nav class="navbar__container">
-      <div class="navbar__logo">XIANOIR</div>
-      <div class="navbar__menu">
-        <ul>Home</ul>
-        <ul>Services</ul>
-        <ul>Pricing</ul>
-        <ul>Contact</ul>
-      </div>
-    </nav>
-  </header>
 </head>
 <body>
-  
+  <nav class="navbar__container">
+    <div class="navbar__logo">XIANOIR</div>
+    <div class="navbar__menu">
+      <button class="link">Home</button>
+      <div class="dropdown">
+        <button class="link">Services</button>
+          <div class="services__dropdown">
+            <button class="link">Menu 1</button>
+          </div>
+      </div>
+      <button class="link">Pricing</button>
+      <button class="link">Contact</button>
+    </div>
+  </nav>
 
   <script src="./scripts/script.js"></script>
 </body>
 </html>
+
