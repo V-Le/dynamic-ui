@@ -42,7 +42,7 @@ html {
   color: var(--primary-font-color);
   cursor: pointer;
   text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .nav__link:hover {
@@ -50,7 +50,7 @@ html {
 }
 
 .dropdown__link {
-  margin: 6px 6px;
+  margin: 8px;
   font-size: 16px;
   font-weight: 500;
   color: var(--primary-font-color);
