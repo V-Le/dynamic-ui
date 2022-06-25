@@ -33,60 +33,47 @@ html {
 
 .navbar__menu {
   display: flex;
-  overflow: hidden;
 }
 
-.link {
-  position: relative;
+.nav__link {
   margin: 0 16px;
   font-size: 16px;
   font-weight: 500;
   color: var(--primary-font-color);
-  transition: color .2s ease-in-out;
-  background: none;
-  border: none;
   cursor: pointer;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
-.lin {
-  margin: 0 16px;
+.nav__link:hover {
+  color:aqua;
+}
+
+.dropdown__link {
+  margin: 6px 6px;
   font-size: 16px;
   font-weight: 500;
   color: var(--primary-font-color);
-  transition: color .2s ease-in-out;
-  background: none;
-  border: none;
   cursor: pointer;
   text-decoration: none;
-}
-
-.link:hover {
-  color: aqua;
-}
-
-.dropdown__container {
-  border: 1px black solid;
-  overflow: hidden;
-}
-
-.dropdown_menu {
-  position: absolute;
-  min-width: 160px;;
-  z-index: 1;
 }
 
 .dropdown_services {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--primary-font-color);
-  transition: color .2s ease-in-out;
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
+  position: relative;
 }
 
-.dropdown_services:hover {
-  color: aqua;
+.dropdown__services__menu {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100px;
+  background-color: #5a5a5a;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.dropdown_services:hover .dropdown__services__menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
