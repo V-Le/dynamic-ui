@@ -1,6 +1,7 @@
 :root {
   --primary-navbar-color: #24252a;
   --primary-font-color: #fff;
+  --temp-bg-color: #7a7a7a;
 }
 
 * {
@@ -10,7 +11,7 @@
 }
 
 html {
-  background-color: #d6e3ec;
+  background-color: var(--temp-bg-color);
 }
 
 .navbar__container {
@@ -32,7 +33,7 @@ html {
 
 .navbar__menu {
   display: flex;
-  position: relative;
+  overflow: hidden;
 }
 
 .link {
@@ -48,17 +49,44 @@ html {
   text-decoration: none;
 }
 
+.lin {
+  margin: 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-font-color);
+  transition: color .2s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .link:hover {
   color: aqua;
 }
 
-.dropdown {
-  position: absolute;
-  left: 0;
-  top: 100%;
+.dropdown__container {
   border: 1px black solid;
+  overflow: hidden;
 }
 
-.services_dropdown {
-  display: flex;
+.dropdown_menu {
+  position: absolute;
+  min-width: 160px;;
+  z-index: 1;
+}
+
+.dropdown_services {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-font-color);
+  transition: color .2s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown_services:hover {
+  color: aqua;
 }
