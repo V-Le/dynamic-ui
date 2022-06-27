@@ -86,6 +86,10 @@ html {
   transition: transform .8s ease-in-out;
 }
 
-.fa-bars:hover {
+#navbar__ham__btnControl {
+  display: none;
+}
+
+#navbar__ham__btnControl:checked + label > .fa-bars {
   transform: rotate(90deg);
 }
