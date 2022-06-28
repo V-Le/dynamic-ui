@@ -121,6 +121,9 @@ html {
 /*------ IMAGE SLIDER SECTION -----*/
 .slider__section {
   border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 500px;
   padding: 25px;
@@ -128,17 +131,20 @@ html {
 
 .slider__section__screenWidth {
   border: 1px solid  black;
-  width: 100%;
+  width: 1200px;
   height: 100%;
   overflow: hidden;
 }
 
 .slider__container {
   border: 1px solid red;
-  width: 3000px;
+  display: flex;
+  width: 3600px;
   height: 100%;
 }
 
 .slider__image__container {
-  width: 1000px;
+  border: 1px solid green;
+  width: 1200px;
+  height: 100%;
 }
