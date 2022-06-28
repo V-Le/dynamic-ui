@@ -133,18 +133,24 @@ html {
   border: 1px solid  black;
   width: 1200px;
   height: 100%;
+  position: relative;
   overflow: hidden;
 }
 
 .slider__container {
   border: 1px solid red;
   display: flex;
+  position: absolute;
   width: 3600px;
   height: 100%;
+  left: 0px;
 }
 
 .slider__image__container {
   border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 1200px;
   height: 100%;
 }
