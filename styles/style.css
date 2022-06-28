@@ -73,7 +73,7 @@ html {
 .dropdown_services:hover .dropdown__services__menu {
   visibility: visible;
   opacity: 1; 
-  transition: all .1s linear;
+  transition: all .2s linear;
 }
 
 .sectionbreak {
@@ -83,7 +83,7 @@ html {
 .fa-bars {
   color: white;
   font-size: 2rem;
-  transition: transform .8s ease-in-out;
+  transition: transform .4s ease-in-out;
 }
 
 #navbar__ham__btnControl {
@@ -92,4 +92,23 @@ html {
 
 #navbar__ham__btnControl:checked + label > .fa-bars {
   transform: rotate(90deg);
+}
+
+.hamburger__container {
+  position: relative;
+}
+
+.hamburger__menu {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  background: #5a5a5a;
+  width: 100px;
+}
+
+#navbar__ham__btnControl:checked ~ .hamburger__menu {
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s linear;
 }
