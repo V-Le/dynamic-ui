@@ -9,7 +9,6 @@ sliderLeftBtn.addEventListener('click', () => {
   if (x < 0) {
     x += 1200;
     sliderContainer.setAttribute('style', `left: ${x}px`);
-    console.log(x);
   } else { return }
 });
 
@@ -17,6 +16,5 @@ sliderRightBtn.addEventListener('click', () => {
   if (x > -2400) {
     x += -1200;
     sliderContainer.setAttribute('style', `left: ${x}px`);
-    console.log(x);
   } else { return }
 });
