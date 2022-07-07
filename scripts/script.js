@@ -4,7 +4,6 @@ const sliderRightBtn = document.querySelector('.nav__button__right');
 
 var x = 0;
 
-
 sliderLeftBtn.addEventListener('click', () => {
   if (x < 0) {
     x += 1200;
