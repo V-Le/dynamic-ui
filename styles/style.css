@@ -170,5 +170,15 @@ html {
 }
 
 .fa-circle {
+  color: var(--primary-navbar-color);
   padding: 0 10px;
+  opacity: .75;
+}
+
+.fa-circle:hover{
+  color: var(--primary-font-color);
+}
+
+.fa-circle.active {
+  color: var(--primary-font-color);
 }
