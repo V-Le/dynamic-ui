@@ -48,5 +48,19 @@ sliderRightBtn.addEventListener('click', () => {
   }
 })
 
+const navDotsContainer = document.querySelector('.nav__dots__container');
+
+for (let i = 0; i <= sliderImageContainer.length-1; i++) {
+  navDotsContainer.innerHTML += '<i class="fa-solid fa-circle"></i>';
+}
+
+const navDots = document.querySelectorAll('.fa-circle');
+for (let x = 0; x <= sliderImageContainer.length-1; x++) {
+  navDots[x].addEventListener('click', () => {
+    sliderImageContainer[imageIndex].classList.toggle('show');
+    imageIndex = x;
+    sliderImageContainer[imageIndex].classList.toggle('show');
+  })
+}
 
 
